@@ -19,39 +19,39 @@ var Quotes=["The things you own end up owning you.",
 "All the ways you wish you could be, that's me. I look like you wanna look, I fuck like you wanna fuck, I am smart, capable, and most importantly, I am free in all the ways that you are not.",
 "Fuck what you know. You need to forget about what you know, that's your problem. Forget about what you think you know about life, about friendship, and especially about you and me.",
 "Reject the basic assumptions of civilization, especially the importance of material possessions."];
-var Author=["-Tyler Durden",
-"-Tyler Durden",
-"-Narrator(Edward Norton)",  
-"-Tyler Durden", 
-"-Narrator(Edward Norton)",
-"-Tyler Durden",  
-"-Narrator(Edward Norton)",
-"-Narrator(Edward Norton)",
-"-Narrator(Edward Norton)",
-"-Tyler Durden",  
-"-Narrator(Edward Norton)", 
-"-Narrator(Edward Norton)", 
-"-Narrator(Edward Norton)",
-"-The Mechanic",
-"-Tyler Durden", 
-"-Narrator(Edward Norton)", 
-"-Narrator(Edward Norton)",
-"-Lou",
-"-Tyler Durden", 
-"-Tyler Durden", 
-"-Tyler Durden"];
+var Author=["Tyler Durden",
+"Tyler Durden",
+"Narrator(Edward Norton)",  
+"Tyler Durden", 
+"Narrator(Edward Norton)",
+"Tyler Durden",  
+"Narrator(Edward Norton)",
+"Narrator(Edward Norton)",
+"Narrator(Edward Norton)",
+"Tyler Durden",  
+"Narrator(Edward Norton)", 
+"Narrator(Edward Norton)", 
+"Narrator(Edward Norton)",
+"The Mechanic",
+"Tyler Durden", 
+"Narrator(Edward Norton)", 
+"Narrator(Edward Norton)",
+"Lou",
+"Tyler Durden", 
+"Tyler Durden", 
+"Tyler Durden"];
 
 $(document).ready(function(){	
 	i=randomnumber();
 	$(".quote").append(Quotes[i]);
-	$(".author").append(Author[i]);
+	$(".author").append("-"+Author[i]);
 	
 	$(".quotebutton").click(function(){
 		i=randomnumber();	
 		$(".quote").empty();
 		$(".author").empty();
 		$(".quote").append(Quotes[i]);
-		$(".author").append(Author[i]);
+		$(".author").append("-"+Author[i]);
 	});
 
 	$('.popup').click(function(event) {
